@@ -15,13 +15,13 @@
 
 ## What is it?
 
-This is a proof of concept (POC), of how different application can communicate to the same analytic layer.
+The problem: When you have multiple application, such as in micro front-end, you need to find a way to communicate between them.
 
-This could be useful in case of micro front-end.
+This is an **event based** proof of concept (POC),of how three application and an analitycs layer can communicate.
+
+This had been inspired by [MicroFrontend](https://micro-frontends.org/) and [Eev](https://github.com/chrisdavies/eev)
 
 ![Micro front-end compared to others](./assets/monolith-frontback-microservices.png)
-
-[> More about Micro front-ends](https://micro-frontends.org/)
 
 ## How it works?
 
