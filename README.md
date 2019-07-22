@@ -2,12 +2,16 @@
 
 ## Summary
 
-* [What is it?](#what-is-it-)
-* [How it works?](#how-it-works-)
-* [How to use?](#how-to-use-)
-  + [App side: Creating and dispatching event](#app-side--creating-and-dispatching-event)
-  + [Analytics side: Catching and processing events](#analytics-side--catching-and-processing-events)
-* [Under the hood](#under-the-hood)
+<!-- toc -->
+
+- [What is it?](#what-is-it)
+- [How it works?](#how-it-works)
+- [How to use?](#how-to-use)
+  * [App side: Creating and dispatching event](#app-side-creating-and-dispatching-event)
+  * [Analytics side: Catching and processing events](#analytics-side-catching-and-processing-events)
+- [Under the hood](#under-the-hood)
+
+<!-- tocstop -->
 
 ## What is it?
 
