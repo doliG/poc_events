@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>POC Events</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app-header">
+    <h2>App header</h2>
+    <ul>
+      <li v-for="link of links">
+        <a :href="link" @click.prevent="trackLinkClick(link)">
+          {{ link }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="app-products">
+    <h2>App Products</h2>
+    <ul>
+      <li v-for="product of products">
+        <a :href="product" @click.prevent="trackProductClick(product)">{{ product }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="app-tracking">
+    <hr>
+    <h2>App log</h2>
+    <ul>
+      <li v-for="trackingEvent of trackingEvents">
+        <p>
+          <b>Type:</b> {{ trackingEvent.type }}
+          <b>at:</b>
+          {{ trackingEvent.dispatchedAt.toLocaleString("fr", {
+            year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' }) }}<br>
+          <b>Payload:</b> {{ trackingEvent.payload }}<br>
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./app-header.js"></script>
+  <script src="./app-products.js"></script>
+  <script src="./app-logs.js"></script>
+  <script src="./tracking.js"></script>
+</body>
+
+</html>
