@@ -1,5 +1,14 @@
 # Readme
 
+## Summary
+
+* [What is it?](#what-is-it-)
+* [How it works?](#how-it-works-)
+* [How to use?](#how-to-use-)
+  + [App side: Creating and dispatching event](#app-side--creating-and-dispatching-event)
+  + [Analytics side: Catching and processing events](#analytics-side--catching-and-processing-events)
+* [Under the hood](#under-the-hood)
+
 ## What is it?
 
 This is a proof of concept (POC), of how different application can communicate to the same analytic layer.
@@ -21,9 +30,9 @@ And there is on analytics layer called `tracking`
 
 > Note: I simplified it for demo purpose. In a full micro front-end app, you'll probably have more apps like basket, checkout, catalog...
 
-The tracking layer expose an object called `TrackingEvent` which can have to be dispatched.
+The tracking layer expose an object called `TrackingEvent` which will be dispatched.
 
-The tracking layer is responsible to catch and handle ALL trackingEvents and sync it with the analitycs side.
+The tracking layer is responsible to catch and handle ALL dispached trackingEvents, and sync it with the analitycs side.
 
 
 ## How to use?
