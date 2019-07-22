@@ -2,7 +2,7 @@
 
 ## What is it?
 
-This is a proof of concept (POC), and how different application can communicate to the same analytic layer.
+This is a proof of concept (POC), of how different application can communicate to the same analytic layer.
 
 This could be useful in case of micro front-end.
 
